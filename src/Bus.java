@@ -26,6 +26,16 @@ public class Bus extends Transport implements Competing {
     }
 
     @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
     public void PitStop() {
         System.out.printf("Автобус %s совершил Пит-Стоп"+ "\n", this.brand);
     }

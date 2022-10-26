@@ -44,5 +44,10 @@ public class Main {
         System.out.println("Лучшее время круга: "+Mercedes.BestLap());
         System.out.println("Максимальная скорость: "+Mercedes.maxSpeed());
 
+        System.out.println(Kia.equals(Lada));
+        System.out.println(Kia.equals(Kia));
+        System.out.println(Mercedes.equals(Mercedes));
+        System.out.println(Mercedes.equals(Ferrari));
+
     }
 }

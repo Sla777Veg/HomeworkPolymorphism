@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public abstract class Transport {
     protected final String brand;
     protected final String model;
@@ -8,17 +10,9 @@ public abstract class Transport {
 
     public Transport(String brand, String model, double engineVolume) {
 
-        if (brand == null) {
-            this.brand = "default";
-        } else {
-            this.brand = brand;
-        }
+        this.brand = Objects.requireNonNullElse(brand, "default");
 
-        if (model == null) {
-            this.model = "default";
-        } else {
-            this.model = model;
-        }
+        this.model = Objects.requireNonNullElse(model, "default");
 
         if (engineVolume == 0) {
             this.engineVolume = 1.5;
@@ -42,5 +36,19 @@ public abstract class Transport {
 
     public void setEngineVolume(double engineVolume) {
         this.engineVolume = engineVolume;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Transport transport = (Transport) o;
+        return Double.compare(transport.engineVolume, engineVolume) == 0 && brand.equals(transport.brand) && model.equals(transport.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, model, engineVolume);
     }
 }

@@ -15,10 +15,7 @@ public class Car extends Transport implements Competing {
     public Car(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
 
-
-
     }
-
 
     @Override
     public String toString() {
@@ -43,5 +40,15 @@ public class Car extends Transport implements Competing {
     @Override
     public int maxSpeed() {
         return ThreadLocalRandom.current().nextInt(1,400);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
     }
 }
