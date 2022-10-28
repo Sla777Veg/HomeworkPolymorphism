@@ -28,12 +28,12 @@ public class Car extends Transport implements Competing {
     }
 
     @Override
-    public void PitStop() {
+    public void pitStop() {
         System.out.printf("Автомобиль %s совершил Пит-Стоп"+ "\n", this.brand);
     }
 
     @Override
-    public int BestLap() {
+    public int bestLap() {
         return ThreadLocalRandom.current().nextInt(1,1000);
     }
 

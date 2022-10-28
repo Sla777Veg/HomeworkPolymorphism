@@ -28,10 +28,10 @@ public class Main {
         System.out.println(driverB);
         System.out.println(lada);
         driverB.startMove();
-        lada.PitStop();
+        lada.pitStop();
         driverB.refill();
         driverB.finishMove();
-        System.out.println("Лучшее время круга: "+lada.BestLap());
+        System.out.println("Лучшее время круга: "+lada.bestLap());
         System.out.println("Максимальная скорость: "+lada.maxSpeed());
     }
 
@@ -40,10 +40,10 @@ public class Main {
         System.out.println(driverB2);
         System.out.println(kia);
         driverB2.startMove();
-        kia.PitStop();
+        kia.pitStop();
         driverB2.refill();
         driverB2.finishMove();
-        System.out.println("Лучшее время круга: "+kia.BestLap());
+        System.out.println("Лучшее время круга: "+kia.bestLap());
         System.out.println("Максимальная скорость: "+kia.maxSpeed());
 
     }
@@ -53,10 +53,10 @@ public class Main {
         System.out.println(driverD);
         System.out.println(ferrari);
         driverD.startMove();
-        ferrari.PitStop();
+        ferrari.pitStop();
         driverD.refill();
         driverD.finishMove();
-        System.out.println("Лучшее время круга: "+ferrari.BestLap());
+        System.out.println("Лучшее время круга: "+ferrari.bestLap());
         System.out.println("Максимальная скорость: "+ferrari.maxSpeed());
     }
 
@@ -65,10 +65,10 @@ public class Main {
         System.out.println(driverC);
         System.out.println(mercedes);
         driverC.startMove();
-        mercedes.PitStop();
+        mercedes.pitStop();
         driverC.refill();
         driverC.finishMove();
-        System.out.println("Лучшее время круга: "+mercedes.BestLap());
+        System.out.println("Лучшее время круга: "+mercedes.bestLap());
         System.out.println("Максимальная скорость: "+mercedes.maxSpeed());
     }
 
