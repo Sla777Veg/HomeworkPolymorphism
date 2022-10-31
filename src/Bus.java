@@ -17,15 +17,6 @@ public class Bus extends Transport implements Competing {
     }
 
     @Override
-    public String toString() {
-        return "Bus{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", engineVolume=" + engineVolume +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         return super.equals(o);
     }
@@ -49,4 +40,15 @@ public class Bus extends Transport implements Competing {
     public int maxSpeed() {
         return ThreadLocalRandom.current().nextInt(1,180);
     }
+
+    @Override
+    public String toString() {
+        return "Bus{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", engineVolume=" + engineVolume +
+                '}';
+    }
 }
+
+

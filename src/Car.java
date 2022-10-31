@@ -18,16 +18,6 @@ public class Car extends Transport implements Competing {
     }
 
     @Override
-    public String toString() {
-        return "Car{" +
-
-                ", brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", engineVolume=" + engineVolume +
-                '}';
-    }
-
-    @Override
     public void pitStop() {
         System.out.printf("Автомобиль %s совершил Пит-Стоп"+ "\n", this.brand);
     }
@@ -50,5 +40,14 @@ public class Car extends Transport implements Competing {
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+    @Override
+    public String toString() {
+        return "Car{" +
+
+                ", brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", engineVolume=" + engineVolume +
+                '}';
     }
 }

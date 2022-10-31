@@ -30,14 +30,6 @@ public class CargoCar extends Transport implements Competing {
         return ThreadLocalRandom.current().nextInt(1,200);
     }
 
-    @Override
-    public String toString() {
-        return "CargoCar{" +
-                "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
-                ", engineVolume=" + engineVolume +
-                '}';
-    }
 
     @Override
     public boolean equals(Object o) {
@@ -47,5 +39,14 @@ public class CargoCar extends Transport implements Competing {
     @Override
     public int hashCode() {
         return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "CargoCar{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", engineVolume=" + engineVolume +
+                '}';
     }
 }
